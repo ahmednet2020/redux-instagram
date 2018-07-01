@@ -1,0 +1,17 @@
+.single
+{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    h1
+    {
+	    flex-basis: 100%;
+		text-align: center;
+		color:$blue;
+    }
+    & > *
+    {
+    	flex: 0 0 48%;
+    }
+}

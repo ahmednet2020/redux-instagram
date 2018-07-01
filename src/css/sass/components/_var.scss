@@ -1,0 +1,33 @@
+//color
+$blue: #2196F3;
+$textcolor1:#494F4F;
+$textcolor2:#3c3e45;
+$backcolor:#3B3F4C;
+$whitecolor:#fafafa;
+$lightgrey:#EDEEED;
+//var for left and right in css
+$float-left:left;
+$float-right:right;
+$text-left:left;
+$text-right:right;
+$left:left;
+$right:right;
+//change dir lang auto
+@if ($dir == rtl)
+{
+	$float-left:right;
+	$float-right:left;
+	$text-left:right;
+	$text-right:left;
+	$left:right;
+	$right:left;
+}
+//media var
+$maxxl: "all and (max-width: 1200px)";
+$maxlg: "all and (max-width: 992px)";
+$maxmd: "all and (max-width: 768px)";
+$xs: "all and (max-width: 575px)";
+$xl: "all and (min-width: 1200px)";
+$lg: "all and (min-width: 992px)";
+$md: "all and (min-width: 768px)";
+$sm: "all and (min-width: 576px)";

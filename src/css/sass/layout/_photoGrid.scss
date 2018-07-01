@@ -1,0 +1,12 @@
+ .photo-grid
+{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 1rem;
+    .photo
+    {
+      flex: 0 0 calc(100%/3 - 1rem);
+      margin: 1rem 0;
+    }
+}

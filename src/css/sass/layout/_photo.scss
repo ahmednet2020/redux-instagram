@@ -1,0 +1,73 @@
+.photo
+{
+  position: relative;
+  box-shadow: 0 0 5px $textcolor1;
+  padding: 0.5rem;
+  .img-link
+  {
+    display: block;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    img
+    {
+      width:100%;
+      height:100%;
+    }
+  }
+  figcaption
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .control-buttons
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    .btn
+    {
+      flex: 0 0 48%;
+      background: none;
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid $blue;
+      color:$blue;
+      font-size:2rem;
+      line-height: 1;
+      &:hover
+      {
+        background: $blue;
+        color:$whitecolor;
+      }
+    }
+  }
+  .hearts
+  {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color:$blue;
+    @include scale(0);
+    @include transition(transform 0.5s ease);
+    &.active
+    {
+      @include scale(1);
+    }
+    span
+    {
+      background: $whitecolor;
+      padding: 3rem 2rem;
+     @include border-radius(50%);
+    }
+  }
+
+}

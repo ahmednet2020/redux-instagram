@@ -1,0 +1,81 @@
+// "Instagram-like" webfont
+@font-face {
+    font-family: 'billabongregular';
+    src: url('https://rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot');
+    src: url('https://rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff') format('woff'),
+         url('https://rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf') format('truetype'),
+         url('https://rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+//font extend class
+%textfont
+{
+    font-family: 'Raleway', sans-serif;;
+}
+%headfont
+{
+  font-family: billabong, 'billabongregular', sans-serif;
+}
+html, body
+{
+    font-size: 14px;
+    @extend %textfont;
+}
+// p style font
+p,.p
+{
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+//heading style font
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: bold;
+    margin: 0;
+    line-height:2;
+    text-transform: capitalize;
+    @extend %headfont;
+}
+
+h1
+{
+
+    font-size: 4em;
+}
+
+h2
+{
+    font-size: 3em;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+h4
+{
+    font-size: 1.5em;
+}
+
+h5
+{
+    font-size: 1.1em;
+}
+
+h6,.text
+{
+    font-weight: normal;
+    font-size: 0.8em;
+}
+.underline
+{
+    text-decoration: underline;
+}
+/*===== end font style ===== */

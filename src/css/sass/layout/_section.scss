@@ -1,0 +1,14 @@
+.main
+{
+	width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: block;
+    overflow: hidden;
+}
+
+
+@import './_photoGrid';
+@import './_photo';
+@import './_single';
+@import './_comments';
