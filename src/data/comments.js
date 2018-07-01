@@ -7,7 +7,7 @@ const comments = {
   ],
   "BAcyDyQwcXX":[
     {
-      "text":"Wes. WE should have lunch.",
+      "text":"Wes. what is this.",
       "user": "jdaveknox"
     },
     {
